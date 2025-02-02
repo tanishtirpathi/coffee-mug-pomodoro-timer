@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Sedan:ital@0;1&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Coffee Timer</h1>
+      <div class="flex">
+        <div class="cup">
+          <div class="coffee" id="coffee">
+            <h3>coffee time</h3>
+            <h3>Baby</h3>
+          </div>
+        </div>
+        <div class="todoo">
+          <div class="containerr">
+            <h2>To-Do List</h2>
+            <input type="text" id="taskInput" placeholder="Add a new task..." />
+            <button onclick="addTask()">Add Task</button>
+            <ul id="taskList"></ul>
+          </div>
+        </div>
+        <div class="timerthings">
+          <input type="number" id="minutes" placeholder="Minutes" />
+          <input type="number" id="seconds" placeholder="Seconds" />
+          <div class="buttons">
+            <button onclick="startTimer()">Start</button>
+            <button onclick="resetTimer()">Reset</button>
+          </div>
+        </div>
+      </div>
+      <h2 id="timerDisplay">00:00</h2>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
